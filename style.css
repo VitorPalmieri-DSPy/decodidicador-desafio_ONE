@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --cor-1: #F3F5FC;
+    --cor-2: #0A3871;
+    --cor-3: #9B9797;
+    --cor-4: #FFFFFF;
+    --cor-5: #495057;
+    --cor-hover: #E8E8E8;
+
+    --font-primaria: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-1);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.cabecalho {
+    padding-top: 5%;
+    padding-left: 3%;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.area__encriptador {
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+}
+
+.area__texto {
+    padding-left: 5%;
+    padding-top: 3%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.area__texto__input {
+    width: 100%;
+    height: 55vh;
+    resize: none;
+    padding: 0.625rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--cor-5);
+}
+
+.area__texto__input::placeholder {
+    color: var(--cor-2);
+    font-size: 2rem;
+}
+
+.texto__info {
+    color: var(--cor-5);
+    font-size: 1rem;
+}
+
+.area__texto__botoes {
+    width: 80%;
+    margin-top: 5%;
+    display: flex;
+    gap: 10%;
+}
+
+.area__texto__botao__encriptar {
+    color: var(--cor-4);
+    border-color: var(--cor-1);
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 1.5rem;
+    background-color: var(--cor-2);
+}
+
+.area__texto__botao__desencriptar {
+    color: var(--cor-2);
+    border-color: var(--cor-2);
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 1.5rem;
+    background-color: var(--cor-hover);
+}
+
+.area__mensagem {
+    padding: 10% 0% 10% 0%;
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1s;
+    border-radius: 2rem;
+    background-color: var(--cor-4);
+}
+
+.area__mensagem:hover {
+    background-color: var(--cor-3);
+    border-radius: 2rem;
+}
+
+.area__mensagem__output {
+    width: 30rem;
+    height: 30rem;
+    padding: 5%;
+    margin: 2%;
+    display: none;
+    resize: none;
+    border-radius: 2rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 1.25rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--cor-2);
+}
+
+.area__mensagem__inicial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.area__mensagem__img {
+    width: 65%;
+    margin-top: 3.5rem;
+}
+
+.area__mensagem__titulo {
+    font-size: 1.5rem;
+    margin: 0.625rem 0 0 0.625rem;
+    color: var(--color02);
+}
+
+.area__mensagem__titulo__2 {
+    font-size: 1rem;
+    font-weight: 200;
+    margin: 0.625rem 0 0 0.625rem;
+    color: var(--color02);
+}
+
+.area__mensagem__botao {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.area__mensagem__botao__copiar {
+    color: var(--cor-2);
+    font-size: 1.5rem;
+    height: 67px;
+    width: 300px;
+    border-radius: 2rem;
+    border-color: var(--cor-2);
+    background-color: var(--cor-hover);
+    display: none;
+}
+
+.line {
+    height: 0.5rem;
+    background: var(--cor-5);
+    margin-top: 1rem;
+    transition: background 1s ease-in-out;
+}
+
+.line:hover {
+    background: var(--cor-2);
+}
+
+.rodape {
+    font-size: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--cor-4);
+    padding: 2%;
+    gap: 1.5rem;
+    color:var(--cor-5);
+}
+
+.redes__sociais__logo__git {
+    align-items: center;
+    width: 5%;
+}
+
+.redes__sociais__logo__lkd {
+    align-items: center;
+    width: 5%;
+}
+
+@media (max-width: 1200px) {
+
+    .area__encriptador {
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;    
+    }
+
+    .area__texto__botoes {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .area__texto__botao__encriptar {
+        color: var(--cor-4);
+        border-color: var(--cor-1);
+        font-size: 1.5rem;
+        height: 5rem;
+        width: 500%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 1.5rem;
+        background-color: var(--cor-2);
+    }
+
+    .area__texto__botao__desencriptar {
+        color: var(--cor-2);
+        border-color: var(--cor-2);
+        font-size: 1.5rem;
+        height: 5rem;
+        width: 500%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 1.5rem;
+        background-color: var(--cor-hover);
+    }
+
+    .area__mensagem__img {
+        display: none;
+    }
+
+    .area__mensagem {
+        padding: 10% 0% 10% 0%;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        transition: 1s;
+        border-radius: 2rem;
+        background-color: var(--cor-4);
+    }
+
+    .rodape {
+        font-size: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--cor-4);
+        padding: 2%;
+        color:var(--cor-5);
+    }
+
+    .rodape__redes__sociais {
+        display: flex;
+    }
+
+    .redes__sociais__logo__git {
+        padding-left: 85%;
+        width: 15%;
+    }
+
+    .redes__sociais__logo__lkd {
+        padding-left: 5%;
+        width: 15%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .area__encriptador {
+        margin-bottom: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;    
+    }
+
+    .area__texto__input {
+        margin-top: 20%;
+    }
+
+    .area__texto__botoes {
+        margin: 1%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .area__texto__botao__encriptar {
+        color: var(--cor-4);
+        border-color: var(--cor-1);
+        font-size: 1.5rem;
+        height: 5rem;
+        width: 110%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 1.5rem;
+        background-color: var(--cor-2);
+    }
+
+    .area__texto__botao__desencriptar {
+        color: var(--cor-2);
+        border-color: var(--cor-2);
+        font-size: 1.5rem;
+        height: 5rem;
+        width: 110%;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-radius: 1.5rem;
+        background-color: var(--cor-hover);
+    }
+
+    .rodape {
+        font-size: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background: var(--cor-4);
+        padding: 2%;
+        color:var(--cor-5);
+    }
+
+    .rodape__redes__sociais {
+        display: flex;
+    }
+
+    .redes__sociais__logo__git {
+        padding-left: 80%;
+        width: 20%;
+    }
+
+    .redes__sociais__logo__lkd {
+        padding-left: 5%;
+        width: 20%;
+    }
+
+}
